@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #000000b6;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background: #f8fafc;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.task-list {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style:decimal;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-list li a:hover {
+    background: #000000b6;
+    color: white;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #000000b6;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.skills-grid, .projects-grid, .education-grid, .certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.skill-item, .project-card, .education-card, .certificate-card {
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    list-style: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item:hover, .project-card:hover, .education-card:hover, .certificate-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skill-icon {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.project-card img, .certificate-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-card h3, .certificate-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #000000b6;
+}
+
+.education-card p, .certificate-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Contact Section */
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background: #000000b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #000000b6;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+#education {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#education .section-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#education .education-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(150px, auto);
+}
+
+#education .education-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.5s ease;
+}
+
+#education .education-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#education .education-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.education-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Styling umum */
+.section {
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Styling khusus untuk certificate */
+.certificate-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.certificate-card {
+    font-size: large;   
+    text-align: center;
+    margin-bottom: 40px; /* Jarak antar sertifikat */
+    padding: 20px;               /* Memberikan ruang di dalam kotak */
+    border: 2px solid #ddd;       /* Menambahkan border tipis */
+    border-radius: 10px;          /* Membuat sudut kotak melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    max-width: 650px;             /* Batas maksimal lebar kotak */
+    margin: 0 auto;               /* Agar kotak berada di tengah halaman */
+}
+
+.certificate-card:hover, .certificate-card img:hover {
+transform: translateY(-3px);
+transition: transform 0.3s ease;
+}
+
+.certificate-card img {
+    width: 100%; /* Sesuaikan dengan lebar kontainer */
+    max-width: 400px; /* Batas maksimal lebar gambar */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Margin bawah untuk memberi ruang antara gambar dan teks */
+}
+
+.certificate-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.certificate-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
